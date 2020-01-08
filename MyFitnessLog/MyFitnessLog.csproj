@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyFitnessLog.Business.Contracts\MyFitnessLog.Business.Contracts.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Business\MyFitnessLog.Business.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data.Contracts\MyFitnessLog.Data.Contracts.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data.Models\MyFitnessLog.Data.Models.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data\MyFitnessLog.Data.csproj" />
+  </ItemGroup>
+
+
+
+</Project>

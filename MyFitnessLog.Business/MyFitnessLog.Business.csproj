@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MyFitnessLog.Business.Contracts\MyFitnessLog.Business.Contracts.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data.Contracts\MyFitnessLog.Data.Contracts.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data.Models\MyFitnessLog.Data.Models.csproj" />
+    <ProjectReference Include="..\MyFitnessLog.Data\MyFitnessLog.Data.csproj" />
+  </ItemGroup>
+
+</Project>
