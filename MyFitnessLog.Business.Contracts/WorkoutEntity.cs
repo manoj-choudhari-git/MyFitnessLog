@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace MyFitnessLog.Data.Models
+namespace MyFitnessLog.Business.Contracts
 {
-    public class WorkoutLog
+    public class WorkoutEntity
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
 
         public string ActivityName { get; set; }
