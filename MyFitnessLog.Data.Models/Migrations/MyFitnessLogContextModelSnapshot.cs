@@ -22,7 +22,9 @@ namespace MyFitnessLog.Data.Models.Migrations
             modelBuilder.Entity("MyFitnessLog.Data.Models.Entities.WorkoutLog", b =>
                 {
                     b.Property<int>("Id")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ActivityName")
                         .HasColumnType("nvarchar(max)");

@@ -19,7 +19,7 @@ namespace MyFitnessLog.Data
         public async Task<IList<WorkoutData>> GetWorkoutRecordsAsync()
         {
             IList<WorkoutData> dataCollection = new List<WorkoutData>();
-            var workoutLogCollection = await _context.Workouts.ToListAsync();
+            var workoutLogCollection = await _context.Workouts.AsNoTracking().ToListAsync();
 
             foreach (var log in workoutLogCollection)
             {
@@ -54,7 +54,8 @@ namespace MyFitnessLog.Data
                 workoutLogCollection.Add(workoutLog);
             }
 
-            await _context.AddRangeAsync(workoutLogCollection);
+            await _context.Workouts.AddRangeAsync(workoutLogCollection);
+            await _context.SaveChangesAsync();
         }
     }
 }

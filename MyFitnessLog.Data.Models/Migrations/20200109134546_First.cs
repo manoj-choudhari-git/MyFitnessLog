@@ -11,7 +11,8 @@ namespace MyFitnessLog.Data.Models.Migrations
                 name: "Workouts",
                 columns: table => new
                 {
-                    Id = table.Column<int>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     ActivityName = table.Column<string>(nullable: true),
                     SetNumber = table.Column<int>(nullable: false),
                     Repeatations = table.Column<int>(nullable: false),

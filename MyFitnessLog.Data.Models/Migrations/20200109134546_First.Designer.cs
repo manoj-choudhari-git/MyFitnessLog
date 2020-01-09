@@ -10,7 +10,7 @@ using MyFitnessLog.Data.Models;
 namespace MyFitnessLog.Data.Models.Migrations
 {
     [DbContext(typeof(MyFitnessLogContext))]
-    [Migration("20200109132558_First")]
+    [Migration("20200109134546_First")]
     partial class First
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,7 +24,9 @@ namespace MyFitnessLog.Data.Models.Migrations
             modelBuilder.Entity("MyFitnessLog.Data.Models.Entities.WorkoutLog", b =>
                 {
                     b.Property<int>("Id")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("ActivityName")
                         .HasColumnType("nvarchar(max)");

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyFitnessLog.Business.Contracts;
 using MyFitnessLog.Models;
@@ -22,7 +23,7 @@ namespace MyFitnessLog.Controllers
         }
 
         [HttpPost]
-        public IActionResult Save(WorkoutEntry model)
+        public async Task<IActionResult> Save(WorkoutEntry model)
         {
             if (model == null || model.NumberOfRepeatations == null || model.NumberOfRepeatations.Count == 0)
             {
@@ -44,7 +45,7 @@ namespace MyFitnessLog.Controllers
                 workoutEntityCollection.Add(entity);
             }
 
-            this.workoutBusiness.SaveWorkoutRecordsAsync(workoutEntityCollection);
+            await this.workoutBusiness.SaveWorkoutRecordsAsync(workoutEntityCollection);
             return View();
         }
     }

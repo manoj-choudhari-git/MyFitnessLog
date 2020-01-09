@@ -7,7 +7,7 @@ namespace MyFitnessLog.Data.Models.Entities
 {
     public class WorkoutLog
     {
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
         public string ActivityName { get; set; }
