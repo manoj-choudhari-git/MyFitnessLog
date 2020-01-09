@@ -1,7 +1,8 @@
-﻿using MyFitnessLog.Business.Contracts;
-using MyFitnessLog.Data.Contracts;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
+using MyFitnessLog.Business.Contracts;
+using MyFitnessLog.Data.Contracts;
 
 namespace MyFitnessLog.Business
 {
@@ -14,10 +15,11 @@ namespace MyFitnessLog.Business
             this.workoutRepository = workoutRepository;
         }
 
-        public IList<WorkoutEntity> GetWorkoutRecords()
+        public async Task<IList<WorkoutEntity>> GetWorkoutRecordsAsync()
         {
             IList<WorkoutEntity> entityCollection = new List<WorkoutEntity>();
-            var dataList = workoutRepository.GetWorkoutRecords();
+            var dataList = await workoutRepository.GetWorkoutRecordsAsync();
+
             foreach (var data in dataList)
             {
                 var entity = new WorkoutEntity()
@@ -35,7 +37,7 @@ namespace MyFitnessLog.Business
             return entityCollection;
         }
 
-        public void SaveWorkoutRecords(IList<WorkoutEntity> entityCollection)
+        public async Task SaveWorkoutRecordsAsync(IList<WorkoutEntity> entityCollection)
         {
             if (entityCollection == null || entityCollection.Count == 0)
             {
@@ -56,7 +58,7 @@ namespace MyFitnessLog.Business
                 dataCollection.Add(data);
             }
 
-            workoutRepository.SaveWorkoutRecords(dataCollection);
+            await workoutRepository.SaveWorkoutRecordsAsync(dataCollection);
         }
     }
 }

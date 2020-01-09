@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyFitnessLog.Business.Contracts;
 using MyFitnessLog.Models;
@@ -46,7 +44,7 @@ namespace MyFitnessLog.Controllers
                 workoutEntityCollection.Add(entity);
             }
 
-            this.workoutBusiness.SaveWorkoutRecords(workoutEntityCollection);
+            this.workoutBusiness.SaveWorkoutRecordsAsync(workoutEntityCollection);
             return View();
         }
     }

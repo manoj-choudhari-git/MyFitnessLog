@@ -1,5 +1,3 @@
-using System;
-
 namespace MyFitnessLog.Models
 {
     public class ErrorViewModel

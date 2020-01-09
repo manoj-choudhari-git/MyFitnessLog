@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace MyFitnessLog.Data.Models
+namespace MyFitnessLog.Data.Models.Entities
 {
     public class WorkoutLog
     {

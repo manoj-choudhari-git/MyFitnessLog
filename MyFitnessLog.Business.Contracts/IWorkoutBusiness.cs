@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace MyFitnessLog.Business.Contracts
 {
     public interface IWorkoutBusiness
     {
-        IList<WorkoutEntity> GetWorkoutRecords();
+        Task<IList<WorkoutEntity>> GetWorkoutRecordsAsync();
 
-        void SaveWorkoutRecords(IList<WorkoutEntity> entityCollection);
+        Task SaveWorkoutRecordsAsync(IList<WorkoutEntity> entityCollection);
     }
 }

@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyFitnessLog.Configuration;
+using MyFitnessLog.Data.Models;
 
 namespace MyFitnessLog
 {
@@ -25,7 +22,12 @@ namespace MyFitnessLog
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            
+            services.AddDbContext<MyFitnessLogContext>(options =>
+            {
+                options.UseSqlServer(Configuration["ConnectionStrings:SqlConnectionString"], actions => actions.MigrationsAssembly("MyFitnessLog.Data.Models"));
 
+            });
             DependencyInjectionConfig.Configure(services);
         }
 
