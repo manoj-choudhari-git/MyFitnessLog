@@ -3,17 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog", "MyFitnessLog\MyFitnessLog.csproj", "{F6703F3C-F0A2-4615-86F8-BFC3BB0591E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog", "MyFitnessLog\MyFitnessLog.csproj", "{F6703F3C-F0A2-4615-86F8-BFC3BB0591E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog.Business", "MyFitnessLog.Business\MyFitnessLog.Business.csproj", "{1CEAF934-5871-4D86-8BBA-1CFBFDAD3B13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Business", "MyFitnessLog.Business\MyFitnessLog.Business.csproj", "{1CEAF934-5871-4D86-8BBA-1CFBFDAD3B13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog.Business.Contracts", "MyFitnessLog.Business.Contracts\MyFitnessLog.Business.Contracts.csproj", "{0355AB40-520B-4EE7-9ABF-3F4244F31442}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Business.Contracts", "MyFitnessLog.Business.Contracts\MyFitnessLog.Business.Contracts.csproj", "{0355AB40-520B-4EE7-9ABF-3F4244F31442}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog.Data", "MyFitnessLog.Data\MyFitnessLog.Data.csproj", "{1C908F52-6B96-4D22-8022-4A37773D0F8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Data", "MyFitnessLog.Data\MyFitnessLog.Data.csproj", "{1C908F52-6B96-4D22-8022-4A37773D0F8C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog.Data.Contracts", "MyFitnessLog.Data.Contracts\MyFitnessLog.Data.Contracts.csproj", "{05C6B059-6695-4869-B539-552A7E91D890}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Data.Contracts", "MyFitnessLog.Data.Contracts\MyFitnessLog.Data.Contracts.csproj", "{05C6B059-6695-4869-B539-552A7E91D890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLog.Data.Models", "MyFitnessLog.Data.Models\MyFitnessLog.Data.Models.csproj", "{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Data.Models", "MyFitnessLog.Data.Models\MyFitnessLog.Data.Models.csproj", "{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnesLogRegisterUserJob", "MyFitnesLogRegisterUserJob\MyFitnesLogRegisterUserJob.csproj", "{7FEB5742-702D-47D6-8E00-16484A7F8935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEB5742-702D-47D6-8E00-16484A7F8935}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEB5742-702D-47D6-8E00-16484A7F8935}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEB5742-702D-47D6-8E00-16484A7F8935}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEB5742-702D-47D6-8E00-16484A7F8935}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
