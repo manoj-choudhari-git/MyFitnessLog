@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Logging;
 using System;
 
-namespace MyFitnesLogRegisterUserJob
+namespace MyFitnessLogRegisterUserJob
 {
     class Program
     {

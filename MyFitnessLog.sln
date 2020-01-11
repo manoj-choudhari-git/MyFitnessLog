@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Data.Contracts
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyFitnessLog.Data.Models", "MyFitnessLog.Data.Models\MyFitnessLog.Data.Models.csproj", "{8B1A1FB2-7E56-43C3-AD97-1B48B08564C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnesLogRegisterUserJob", "MyFitnesLogRegisterUserJob\MyFitnesLogRegisterUserJob.csproj", "{7FEB5742-702D-47D6-8E00-16484A7F8935}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyFitnessLogRegisterUserJob", "MyFitnesLogRegisterUserJob\MyFitnessLogRegisterUserJob.csproj", "{7FEB5742-702D-47D6-8E00-16484A7F8935}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
